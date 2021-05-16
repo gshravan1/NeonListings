@@ -1,0 +1,63 @@
+.container {
+    width: 350px;
+    height: 550px;
+    color: blue;
+    top: 0%;
+    left: 50%;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px;
+    background-color: gold;
+    float: right;
+    vertical-align: 0px;
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 5px;
+    padding: 0;
+    font-size: 30px;
+    color: brown;
+    text-align: center;
+    font-family: Forte;
+    margin-bottom: 5%;
+}
+
+.container input {
+    margin-bottom: 10px;   
+    width: 100%;
+}
+
+.container input[type=firstname], .container input[type=lastname], .container input[type=email], .container input[type=password],
+.container input[type=confirmPassword], .container input[type=zipcode], .container input[type=phonenumber]
+    {
+    border: none;
+    border-bottom: 1px solid;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    background: peru;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: blue;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+span.psw {
+    font-weight: bold;
+}
+
+.container .btn {
+    float: right;
+}
+
+

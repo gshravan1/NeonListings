@@ -1,0 +1,43 @@
+.nav-bar {
+    justify-content: space-between;
+}
+
+button {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+.mat-menu-item {
+    font-size: 15px;
+    text-align: left;
+}
+
+.nav-bar .login-container input[type=text], .login-container input[type=password]
+    {
+    border: groove;
+    background: transparent;
+    outline: none;
+    height: 20px;
+    font-size: 16px;
+    opacity: 1;
+    color: white;
+}
+
+.nav-bar input {
+    padding: 6px;
+    font-size: 15px;
+    border: white;
+    width: 200px;
+    margin-right: 1rem;
+  }
+
+span.psw {
+    padding-left: 15px;
+    
+}
+
+::placeholder {
+    color: black;
+}

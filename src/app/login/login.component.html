@@ -1,0 +1,58 @@
+<!--
+    <div class="container">
+    <h1>Login</h1>
+    <form action="">
+    <label for =""> email </label>
+    <input [(ngModel)]="loginUserData.email" name="email" type="text" class="form-control rounded-0" required>
+
+    <label for ="">password</label>
+    <input [(ngModel)]="loginUserData.password" name="password" type="password" class="form-control rounded-0" required>
+
+    <div class="bottom-text">
+        <button (click)="loginUser()" type="button" class="btn btn-primary float-right">Signin</button>
+        <input type="Checkbox" name="I agree" checked="checked">
+            Already registered? signin
+        </div>
+
+    </form>
+    <span class="psw"><a href="#">Forgot password?</a></span>
+</div>
+-->
+
+<mat-drawer-container>
+    <mat-drawer mode="side" [(opened)]="opened">Menu
+
+        <mat-nav-list>
+            <a mat-list-item href="#" [matMenuTriggerFor]="propertyMenu">Property type</a>
+        </mat-nav-list>
+        <mat-divider></mat-divider>
+
+        <mat-nav-list>
+            <a mat-list-item href="#">location</a>
+        </mat-nav-list>
+        <mat-divider></mat-divider>
+
+        <mat-nav-list>
+            <a mat-list-item href="#" [matMenuTriggerFor]="servicesMenu">Rent/Lease</a>
+        </mat-nav-list>
+    </mat-drawer>
+    
+    <mat-drawer-content>
+       <button (click)="opened=!opened"><mat-icon>menu</mat-icon></button>
+    </mat-drawer-content>
+    
+</mat-drawer-container>
+
+<mat-menu #servicesMenu="matMenu">
+    <button mat-menu-item>Lease To</button>
+    <button mat-menu-item>Lease Amount</button>
+    <button mat-menu-item>Lease Duration</button>
+    <button mat-menu-item>Start Date</button>
+    <button mat-menu-item>End Date</button>
+    <button mat-menu-item>Owner/Customer name</button>
+</mat-menu>
+
+<mat-menu #propertyMenu="matMenu">
+    <button mat-menu-item>Residential House</button>
+    <button mat-menu-item>Apartment</button>
+</mat-menu>

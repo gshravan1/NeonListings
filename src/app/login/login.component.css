@@ -1,0 +1,81 @@
+/*
+.container {
+    width: 300px;
+    height: 300px;
+    color: blue;
+    top: 0%;
+    left: 50%;
+    padding: 5px 30px;
+    box-sizing: border-box;
+    box-shadow: 8px 8px 50px;
+    background-color: gold;
+    float: left;
+    vertical-align: 0px;
+    font-size: 16px;
+}
+
+h1 {
+    margin-top: 5px;
+    padding: 0;
+    font-size: 30px;
+    color: brown;
+    text-align: center;
+    font-family: Forte;
+    margin-bottom: 5%;
+}
+
+.container input {
+    margin-bottom: 10px;   
+    width: 100%;
+}
+
+.container input[type=text], .container input[type=password]
+    {
+    border: none;
+    border-bottom: 1px solid;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    font-size: 16px;
+    opacity: 1;
+    color: green;
+}
+
+button {
+    border: none;
+    background: peru;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    color: blue;
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+}
+
+span.psw {
+    float: left;
+    font-weight: bold;
+}
+*/
+
+
+mat-drawer-container {
+    height: 500px;
+    position: absolute;
+}
+
+mat-drawer, mat-drawyer-content {
+    padding: 16px;
+    font-size: 20px;
+}
+
+mat-drawer {
+    background-color: deepskyblue;
+    width: 250px;
+}
+
+mat-menu-item {
+    font-size: 15px;
+    text-align: left;
+}

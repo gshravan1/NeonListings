@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>Signup</h1>
+        <form action="">
+            <label for="">firstname</label>
+            <input [(ngModel)]="signupUserData.firstname" name="firstname" type="firstname" class="form-control rounded-0" required>
+        
+            <label for="">lastname</label>
+            <input [(ngModel)]="signupUserData.lastname" name="lastname" type="lastname" class="form-control rounded-0" required>
+        
+            <label for="">email</label>
+            <input [(ngModel)]="signupUserData.email" name="email" type="email" class="form-control rounded-0" required>
+        
+            <label for="">password</label>
+            <input [(ngModel)]="signupUserData.password" name="password" type="password" class="form-control rounded-0" required>
+        
+            <label for="">confirmPassword</label>
+            <input [(ngModel)]="signupUserData.confirmPassword" name="confirmPassword" type="confirmPassword" class="form-control rounded-0" required>
+        
+            <label for="">zipcode</label>
+            <input [(ngModel)]="signupUserData.zipcode" name="zipcode" type="zipcode" class="form-control rounded-0" required>
+        
+            <label for="">phonenumber</label>
+            <input [(ngModel)]="signupUserData.phonenumber" name="phonenumber" type="phonenumber" class="form-control rounded-0" required>
+       
+            <span class="psw">already registered? <a href="#">Login</a></span>
+            
+
+            <span>
+            <button (click)="signupUser()" class="btn btn-primary">Signup</button>
+            </span>
+                    
+        </form>
+</div>

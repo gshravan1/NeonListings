@@ -1,0 +1,29 @@
+<mat-toolbar class="nav-bar" color="warn">
+
+ <div class="login-container">
+
+    <input [(ngModel)]="headerUserData.email" placeholder="Email or Phone" name="email" type="text" class="form-control rounded-0" required>
+
+    <input [(ngModel)]="headerUserData.password" placeholder="Password" name="password" type="password" class="form-control rounded-0" required>
+
+    <button (click)="headerUser()" type="button" class="btn btn-primary">Signin</button>
+    <span class="psw">New Member? <a href="#">Register now</a></span>
+ </div>
+ 
+ <div>
+    <!--
+      <button mat-button>Login</button>
+      <button mat-button>Signup</button> -->
+
+    <button mat-button [matMenuTriggerFor]="servicesMenu">Profile</button>
+    <button mat-button>Notifications</button>
+    <button mat-button>Contact Us</button>
+ </div>
+</mat-toolbar>
+
+<mat-menu #servicesMenu="matMenu">
+    <button mat-menu-item>My Account</button>
+    <button mat-menu-item>Edit Profile</button>
+    <button mat-menu-item>My Shortlists</button>
+    <button mat-menu-item>Logout</button>
+</mat-menu>
